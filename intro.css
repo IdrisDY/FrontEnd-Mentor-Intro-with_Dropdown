@@ -167,9 +167,10 @@ h5{
     font-family: 'Epilogue', sans-serif;
     font-weight: 900 lighter;
     margin-bottom: -.2em;
-    font-size: 2.1em;
+    font-size: 1.8em;
     margin-top: 0;
     line-height: 1em;
+    width: 100%;
 }
 h2{
     font-family: 'Epilogue',sans-serif;
@@ -225,7 +226,7 @@ button{
     margin-top: 2em;
 }
 .main-content{
-    padding: 0 .5em;
+    padding: 0 .3em;
 }
 a{
     font-weight: 100;
