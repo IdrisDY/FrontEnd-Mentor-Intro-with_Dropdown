@@ -1,7 +1,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-@media(max-width :375px){
+
     .container{
       display: flex;
       justify-content: space-evenly;
@@ -220,7 +220,6 @@ button{
 }
 
 
-}
 
 
 
@@ -235,7 +234,8 @@ button{
 
 
 
-@media(min-width:990px){
+
+@media(min-width:990px ){
 
     .container{
     }
