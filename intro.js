@@ -13,6 +13,7 @@ const subFeatures = $('sub-features')
 const compUp = $('arrowCup')
 const compCdown = $('arrowCdown')
 const compUl = $('comp-ul')
+/* A function that toggles the class active on the menuButton, navlist, closemenu and menucontent. */
 function hideClick(){
    menuButton.classList.toggle('active')
 navlist[0].classList.toggle('navlist-active')
@@ -22,6 +23,9 @@ menucontent[0].classList.toggle('active')
 
 }
 
+/**
+ * A function that is used to close the menu when the user clicks on the close button.
+ */
 function CloseClick(){
    closemenu.classList.remove('active')
    menucontent[0].classList.remove('active')
@@ -29,24 +33,42 @@ function CloseClick(){
 menuButton.classList.toggle('active')
 }
 
+/**
+ * When the arrowUp button is clicked, hide the arrowUp button, hide the subFeatures div, and show the
+ * arrowDown button.
+ */
 const clickArrUP = () =>{
 arrowUp.style.display='none',
 subFeatures.style.display='none'
 arrowDown.style.display='flex'
 }
 
+/**
+ * When the arrowDown element is clicked, hide the arrowDown element, show the subFeatures element, and
+ * show the arrowUp element.
+ */
 const clickArrDown= ()=>{
    arrowDown.style.display='none'
    subFeatures.style.display='block'
    arrowUp.style.display='flex'
 }
 
+/**
+ * When the user clicks on the button with the id of compUp, the button with the id of compCdown will
+ * be displayed, the button with the id of compUp will be hidden, and the unordered list with the id of
+ * compUl will be hidden.
+ */
 function CompUp(){
    compCdown.style.display='flex'
    compUp.style.display='none'
    compUl.style.display = 'none'
 
 }
+/**
+ * When the user clicks on the button with the id of compCdown, the element with the id of compUl will
+ * be displayed, the element with the id of compUp will be displayed, and the element with the id of
+ * compCdown will be hidden.
+ */
 function CompDown(){
 compUl.style.display='block'
 compUp.style.display='block'
