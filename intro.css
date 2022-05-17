@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1em 0 0 0;
 }
 .main-img{
     margin-top: 2rem;
@@ -35,6 +36,7 @@
     border-radius: 1rem;
     padding: 1em 2em;
     border-style: none;
+    
 
 }
 .logos{
@@ -86,10 +88,11 @@ min-height: 100%;
     list-style-type: none;
 }
 #nav-ul{
-    margin: 2em;
+    margin:  1em 1em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding:0 1em 2em  1em;
 }
 #nav-ul li{
     margin-top: 2em;
@@ -115,7 +118,10 @@ h4{
     display: none;
 }
 .btn-f{
-    margin-left: .5em;
+    margin-left: .3em;
+    margin-top: 0em;
+    padding: .4em 0 .2em 0;
+
 }
 #comp-ul{
     display: none;
@@ -136,15 +142,29 @@ h5{
 }
 #login-li{
     margin-top: 2rem;
+    padding-left: 0em;
 }
 #reg-li{
     margin-top: 2rem;
 }
+
+#reg-btn{
+    padding: .5em 4em .5em 4em;
+    border: black 1px solid;
+    border-radius: .5em;
+    width: 100%;
+        }
+        #reg-btn:hover{
+            cursor: pointer;
+            background: black;
+            color: white;
+        }
 #h1-main-text{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900 lighter;
     margin-bottom: -.2em;
     font-size: 2.2em;
+    margin-top: 0;
 }
 h2{
     font-family:Arial,Helvetica,sans-serif;
@@ -157,6 +177,14 @@ button{
 }
 .navlist-desktop{
     display: none;
+}
+.lower-li{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .lower-li-out{
     display: none;
@@ -172,12 +200,35 @@ button{
 }
 #learn-btn{
     margin: auto;
+    padding: 1em 0;
 }
 #br-l{
     display: none;
 }
+button{
+    background-color: white;
+}
+
+.svg-logo{
+    max-width: 4em;
+}
+#svg-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -185,6 +236,9 @@ button{
 
 
 @media(min-width:990px){
+
+    .container{
+    }
     #dropdown{
         display: none;
     }
@@ -209,6 +263,7 @@ button{
         margin-top: 0;
     }
     .nav-head{
+        padding: 1em  1em 0  1em ;
         display: grid;
         grid-template-columns: 1fr 1fr 3fr;
         offset: 5;
@@ -221,6 +276,7 @@ button{
     .lower-li-out{
 display: flex;
 justify-content: flex-end;
+margin-top: -.5em;
     }
     .lower-li-out li{
         padding: 0 1em;
@@ -258,24 +314,27 @@ border-radius: .5em;
     #log-btn{
         padding: .5em 1em;
     }
-    .body{
+    .main-content{
         display: flex;
         flex-direction: row-reverse;
-        top: 7em;
-        padding:  0 6em;
+        padding:  2em 0  0 8em;
+        margin-bottom: 5em;
+        margin-right: 6em;
     }
     #big-img{
         display: none;
     }
     #desk-img{
     display: flex;
-    height: 35rem;
-    width: 26.25rem;
+    height: auto;
+    max-width: 100%;
+    
 
     }
     .main-img{
-    
-
+    display: flex;
+    justify-content: center;
+width: fit-content;
     }
 
     .logos{
@@ -288,6 +347,7 @@ border-radius: .5em;
         display: flex;
         font-size: 4.5em;
         padding:  0  0em 0em 0em;
+        margin-top: 1.2em;
     }
     .main-text{
         justify-content: flex-start;
@@ -297,13 +357,13 @@ border-radius: .5em;
     }
     .bottom{
         display: flex;
-        margin-top: 2em;
+        margin-top: 0em;
         justify-content: flex-start;
         margin-left: 0;
     }
     #svg-label{
         display: flex;
-        margin-top: 2em;
+        margin-top: 0em;
         justify-content: space-evenly;
         width: 70%;
         
@@ -315,15 +375,16 @@ border-radius: .5em;
         display: flex;
         justify-content: flex-start;
         color: rgba(45, 45, 45, 0.793);
-        padding-right: 10em;
-        margin-top: 2em;
+        margin-top: 1em;
         padding-left: 0;
-        font-size: 1.5em;
+        font-size: 1.4em;
         font-weight:bold ;
 
     }
     #learn-btn{
+        margin-top: 0;
         margin-left: 0;
+        margin-bottom: 0;
     }
     #br-1{
         display: block;
@@ -334,5 +395,7 @@ border-radius: .5em;
     #br-l{
         display: block;
     }
-    
+    button{
+        background-color: white;
+    }
 }
