@@ -30,6 +30,7 @@
 #h2-main-text{
     display: flex;
     justify-content: center;
+    margin-top: 1.6em;
 }
 .bottom{
     color: white;
@@ -114,6 +115,8 @@ min-height: 100%;
 h4{
     margin-top: 0;
     margin-left: 1em;
+    font-weight: 100;
+    font-family: 'Epilogue',sans-serif;
 }
 #arrow-up{
     display: none;
@@ -161,16 +164,18 @@ h5{
             color: white;
         }
 #h1-main-text{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-weight: 900 lighter;
     margin-bottom: -.2em;
-    font-size: 2.2em;
+    font-size: 2.1em;
     margin-top: 0;
+    line-height: 1em;
 }
 h2{
-    font-family:Arial,Helvetica,sans-serif;
+    font-family: 'Epilogue',sans-serif;
     font-size: medium;
-    font-weight: lighter;
+    font-weight: light;
+    color: hsl(0, 0%, 41%);
     padding: 0 .5em;
 }
 button{
@@ -222,7 +227,10 @@ button{
 .main-content{
     padding: 0 .5em;
 }
-
+a{
+    font-weight: 100;
+    font-family: 'Epilogue',sans-serif;
+}
 
 
 
@@ -373,7 +381,7 @@ width: fit-content;
     }
     #h1-main-text{
         display: flex;
-        font-size: 4.5em;
+        font-size: 4em;
         padding:  0  0em 0em 0em;
         margin-top: 1.2em;
     }
@@ -402,7 +410,7 @@ width: fit-content;
     #h2-main-text{
         display: flex;
         justify-content: flex-start;
-        color: rgba(45, 45, 45, 0.793);
+        color: hsl(0, 0%, 41%);
         margin-top: 1em;
         padding-left: 0;
         font-size: 1.4em;
