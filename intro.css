@@ -31,13 +31,16 @@
     display: flex;
     justify-content: center;
     margin-top: 1.6em;
+    padding: 0 .1em  0 1.3em;
 }
 .bottom{
     color: white;
     background: black;
     border-radius: 1rem;
-    padding: 1em 2em;
+    padding: .6em 2em;
     border-style: none;
+    width: 100%;
+
     
 
 }
@@ -166,8 +169,8 @@ h5{
 #h1-main-text{
     font-family: 'Epilogue', sans-serif;
     font-weight: 900 lighter;
-    margin-bottom: -.2em;
     font-size: 1.8em;
+    margin-bottom:0;
     margin-top: 0;
     line-height: 1em;
     width: 100%;
@@ -232,7 +235,9 @@ a{
     font-weight: 100;
     font-family: 'Epilogue',sans-serif;
 }
-
+h1{
+    font-family:'Epilogue',sans-serif;
+}
 
 
 
