@@ -421,7 +421,7 @@ width: fit-content;
         margin-top: 1em;
         padding-left: 0;
         font-size: 1.4em;
-        font-weight:bold ;
+        font-weight:500 ;
 
     }
     #learn-btn{
@@ -455,7 +455,7 @@ width: fit-content;
    
    h4{
       margin-bottom: .8em;
-      font-family: sans-serif;
+      font-family:'Epilogue' sans-serif;
       font-weight: 100;
    }
    #sub-features{
