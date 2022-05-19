@@ -1,10 +1,15 @@
 function $(tag){
    return document.getElementById(tag)
 }
+const container = document.getElementsByClassName('container')
+const navhead = document.getElementsByClassName('nav-head')
+const maincontent = document.getElementsByClassName('main-content')
+console.log(maincontent)
 const navlist = document.getElementsByClassName("navlist")
 const menuButton = $('menu-button')
 const menucontent = document.getElementsByClassName('menu-content')
 const closemenu = $('close-menu')
+const snaplogo = $('snap-logo')
 
 const  arrowUp = $('arrow-up')
 const arrowDown = $('arrow-down')
@@ -15,12 +20,14 @@ const compCdown = $('arrowCdown')
 const compUl = $('comp-ul')
 /* A function that toggles the class active on the menuButton, navlist, closemenu and menucontent. */
 function hideClick(){
-   menuButton.classList.toggle('active')
-navlist[0].classList.toggle('navlist-active')
-closemenu.classList.toggle('active')
-menucontent[0].classList.toggle('active')
-
-
+   menuButton.classList.add('active')
+navlist[0].classList.add('navlist-active')
+closemenu.classList.add('active')
+menucontent[0].classList.add('active')
+maincontent[0].classList.add('blur')
+navhead[0].classList.add('blur')
+container[0].classList.add('blur')
+snaplogo.classList.add('blur')
 }
 
 /**
@@ -31,6 +38,11 @@ function CloseClick(){
    menucontent[0].classList.remove('active')
    navlist[0].classList.remove('navlist-active')
 menuButton.classList.toggle('active')
+maincontent[0].classList.remove('blur')
+navhead[0].classList.remove('blur')
+snaplogo.classList.remove('blur')
+
+
 }
 
 /**

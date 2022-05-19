@@ -4,8 +4,20 @@
 
     .container{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-direction: column;
+      z-index: 0;
+position: relative;
+    }
+   
+    .nav-head.blur{
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        background: rgba(77, 73, 73, 0.2);
+    }
+    #snap-logo.blur{
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
 .nav-head{
     display: flex;
@@ -79,16 +91,23 @@ display: none;
 }
 .menu-content{
     display: none;
-    z-index: 1;
     background-color: rgb(255, 255, 255);
 min-height: 100%;  
   position: absolute;
     right: 0em;
+    top: 0;
+    z-index: 99;
+
 }
 .menu-content.active{
     display: flex;
     flex-direction: column;
     width: 65%;
+    
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    background: rgb(255, 255, 255);
+
 }
 .navlist ul li{
     list-style-type: none;
@@ -99,6 +118,7 @@ min-height: 100%;
     justify-content: space-between;
     flex-direction: column;
     padding:0 1em 2em  1em;
+filter: blur(0);
 }
 #nav-ul li{
     margin-top: 2em;
@@ -230,7 +250,15 @@ button{
     margin-top: 2em;
 }
 .main-content{
-    padding: 0 .3em;
+    padding: 0 .5em;
+   
+
+}
+.main-content.blur{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    background: rgba(77, 73, 73, 0.2);
+    z-index: -2;
 }
 a{
     font-weight: 100;
@@ -256,8 +284,7 @@ h3{
 
 @media(min-width:990px ){
 
-    .container{
-    }
+    
     #dropdown{
         display: none;
     }
@@ -411,8 +438,7 @@ width: fit-content;
         width: 70%;
         
     }
-    #svg-label svg{
-    }
+  
 
     #h2-main-text{
         display: flex;
