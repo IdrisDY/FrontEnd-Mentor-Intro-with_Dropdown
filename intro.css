@@ -92,43 +92,51 @@ display: none;
 .menu-content{
     display: none;
     background-color: rgb(255, 255, 255);
-    height: 100%;  
   position: absolute;
     right: 0em;
     top: 0;
-
-    z-index: 99;
 
 }
 .menu-content.active{
     display: flex;
     flex-direction: column;
     width: 65%;
-    height: 100vmax;  
+z-index: 9999;
+    min-height: 656px;  
+    transition: all 0.3s ease-in;
+        bottom: 0;
+    overflow: hidden;
+animation: dropdown .5s linear;
 
-    
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    background: rgb(255, 255, 255);
+}
 
+@keyframes dropdown{
+0%{
+     opacity :0;
+}
+100%{
+     opacity:1;
+}
 }
 .navlist ul li{
     list-style-type: none;
 }
 #nav-ul{
-    margin:  1em 1em;
+    margin:  .5em 1em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding:0 1em 2em  1em;
 filter: blur(0);
+
 }
 #nav-ul li{
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
-.sub-f-li{
+.sub-f{
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 #sub-features{
     margin-top: 1em;
@@ -140,8 +148,7 @@ filter: blur(0);
 
 }
 h4{
-    margin-top: 0;
-    margin-left: 1em;
+ margin: 0;
     font-weight: 100;
     font-family: 'Epilogue',sans-serif;
 }
@@ -156,7 +163,7 @@ h4{
 }
 #comp-ul{
     display: none;
-    margin-top: 1em;
+    margin-top: 0;
 }
 #arrowCup{
 display: none;
@@ -176,7 +183,7 @@ h5{
     padding-left: 0em;
 }
 #reg-li{
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 }
 
 #reg-btn{
@@ -208,6 +215,7 @@ h2{
 }
 button{
     border-style: none;
+    font-family: 'Epilogue',sans-serif;
 }
 .navlist-desktop{
     display: none;
@@ -258,10 +266,13 @@ button{
 
 }
 .main-content.blur{
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    background: rgba(77, 73, 73, 0.2);
-    z-index: -2;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    z-index: -999;
+
 }
 a{
     font-weight: 100;
@@ -270,8 +281,13 @@ a{
 h3{
     font-family:'Epilogue',sans-serif;
 }
-
-
+.liun{
+    margin: 0;
+}
+.bottom{
+    padding: .1em 1em;
+    font-size: .8em;
+}
 
 
 
@@ -299,6 +315,7 @@ h3{
         justify-content: space-between;
         width: min-content;
         margin-left: auto;
+        z-index: 0;
     }
 
     .navlist ,.navlist-active{
