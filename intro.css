@@ -197,6 +197,18 @@ h5{
             background: black;
             color: white;
         }
+        .lg-btn:hover{
+            cursor: pointer;
+            background: black;
+            color: white;
+        }
+        .lg-btn{
+            border: none;
+            padding: .5em 4em .5em 4em;
+            border-radius: .5em;
+            width: 100%;
+        
+        }
 #h1-main-text{
     font-family: 'Epilogue', sans-serif;
     font-weight: 900 lighter;
