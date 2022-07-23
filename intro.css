@@ -9,9 +9,10 @@
       justify-content: center;
       flex-direction: column;
       z-index: 0;
-position: relative;
     }
-   
+   .container.fixed{
+    position: fixed;
+   }
     .nav-head.blur{
         filter: blur(0px);
         -webkit-filter: blur(0px);
@@ -56,7 +57,7 @@ position: relative;
     border-style: none;
     font-size: 1.125rem;
     min-width: 168px;
-width: 80%;
+width: 100%;
 justify-content: center;
 align-items: center;
     text-align: center;

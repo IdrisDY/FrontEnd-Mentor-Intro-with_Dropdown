@@ -26,6 +26,7 @@ navlist[0].classList.add('navlist-active')
 closemenu.classList.add('active')
 menucontent[0].classList.add('active')
 menuContainer.classList.add('active')
+container[0].classList.add('fixed')
 }
 
 /**
@@ -37,6 +38,7 @@ function CloseClick(){
    navlist[0].classList.remove('navlist-active')
 menuButton.classList.toggle('active')
 menuContainer.classList.remove('active')
+container[0].classList.remove('fixed')
 
 }
 
